@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="/maincss" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/05ea6e8469.js" crossorigin="anonymous"></script>
+
+    <title>Ajax starting point</title>
+ </head>
+
+  <body class="form_body">
+<h3 align="center">Welcome to our oline store, please login to visit our store.</h4>
+
+    <div class="form-div">
+    <form action="/login-server" method="post">
+
+          <h3 class="h3_login">Login </h3>
+          <div class="input-field">
+
+
+            <input type="text" name="username" placeholder="Enter your username"/>
+
+            <input type="password" name="password" required placeholder="Enter your password"/>
+
+
+
+
+
+
+
+        </div>
+         <input id="submit-btn"  type="submit" value="Login"/>
+           <h4 id="h4_login">No account ? <a href="/">Register</a></h4>
+
+    </form>
+     </div>
+
+
+    <script>
+
+      const urlparams = new URLSearchParams(window.location.search);
+      const info = urlParams.get("info");
+
+      if(info) {
+        const errorMessage = document.getElementById("error-message");
+        errorMessage.innerText = info;
+        errorMessage.style.display = "block";
+      }
+    </script>
+
+  </body>
+
+</html>

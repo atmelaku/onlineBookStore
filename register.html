@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="/maincss" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/05ea6e8469.js" crossorigin="anonymous"></script>
+
+    <title>Ajax starting point</title>
+ </head>
+
+  <body class="form_body" >
+
+    <h3 align="center">Welcome to our oline store, please sign up and login.</h4>
+
+    <div class="form-div">
+
+    <form action="/register-server" method="post">
+
+          <h3 class="h3_register">Register </h3>
+          <div class="input-field">
+
+            <input type="text" name="fname" placeholder="Enter your name"/>
+
+
+            <input type="text" name="lname" placeholder="Enter last name"/>
+
+
+            <input type="text" name="email" placeholder="Enter last email"/>
+
+
+            <input type="text" name="username" placeholder="Enter New username"/>
+
+            <input type="password" name="password" required placeholder="Enter your password"/>
+          <input type="text" name="zipcode" placeholder="Enter your zipcode"/>
+
+
+
+
+
+        </div>
+ <input id="submit-btn" type="submit" value="Register"/>
+
+           <label id="error-message"></label><br>
+
+           <h4 id="h4_login">Already Have an account ? <a href="/login">Login</a></h4>
+    </form>
+     </div>
+
+  </body>
+
+</html>
